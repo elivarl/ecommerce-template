@@ -1,4 +1,4 @@
-# Ecommerce Catalog Service
+# Template proyecto usando Arquitectura Hexagonal: Ecommerce Catalog Service
 
 Este es un microservicio para la gestión del catálogo de productos de un sistema de E-commerce, desarrollado con **Java 21** y **Spring Boot 4**.
 
