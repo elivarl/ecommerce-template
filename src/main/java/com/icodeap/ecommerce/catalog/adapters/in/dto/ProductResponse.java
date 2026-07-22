@@ -1,4 +1,4 @@
-package com.icodeap.ecommerce.catalog.adapters.web.dto;
+package com.icodeap.ecommerce.catalog.adapters.in.dto;
 
 import java.math.BigDecimal;
 

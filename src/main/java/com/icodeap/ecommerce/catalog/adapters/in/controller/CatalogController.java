@@ -1,10 +1,9 @@
-package com.icodeap.ecommerce.catalog.adapters.web.controller;
+package com.icodeap.ecommerce.catalog.adapters.in.controller;
 
-import com.icodeap.ecommerce.catalog.adapters.web.dto.ProductResponse;
+import com.icodeap.ecommerce.catalog.adapters.in.dto.ProductResponse;
 import com.icodeap.ecommerce.catalog.application.port.in.GetProductByIdUseCase;
 import com.icodeap.ecommerce.catalog.application.port.in.ListProductsUseCase;
 import com.icodeap.ecommerce.catalog.domain.Product;
-import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 

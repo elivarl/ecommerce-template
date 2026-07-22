@@ -1,4 +1,4 @@
-package com.icodeap.ecommerce.catalog.adapters.persistence;
+package com.icodeap.ecommerce.catalog.adapters.out;
 
 import com.icodeap.ecommerce.catalog.application.port.out.ProductRepository;
 import com.icodeap.ecommerce.catalog.domain.Money;
@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 
 @Repository
