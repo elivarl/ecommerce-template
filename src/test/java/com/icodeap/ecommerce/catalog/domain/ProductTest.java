@@ -21,7 +21,7 @@ class ProductTest {
     void rejectsNullName() {
         assertThatThrownBy(() -> new Product(
                 new ProductId("p-1"), null, "electronics", new Money(BigDecimal.TEN), true))
-                .isInstanceOf(IllegalArgumentException.class)
+                .isInstanceOf(BusinessRuleViolationException.class)
                 .hasMessage("name must not be blank");
     }
 
@@ -29,7 +29,7 @@ class ProductTest {
     void rejectsBlankName() {
         assertThatThrownBy(() -> new Product(
                 new ProductId("p-1"), "   ", "electronics", new Money(BigDecimal.TEN), true))
-                .isInstanceOf(IllegalArgumentException.class)
+                .isInstanceOf(BusinessRuleViolationException.class)
                 .hasMessage("name must not be blank");
     }
 }

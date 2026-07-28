@@ -4,7 +4,7 @@ public record Product(ProductId id, String name, String category, Money price, b
 
     public Product {
         if (name == null || name.isBlank()) {
-            throw new IllegalArgumentException("name must not be blank");
+            throw new BusinessRuleViolationException("name must not be blank");
         }
     }
 }

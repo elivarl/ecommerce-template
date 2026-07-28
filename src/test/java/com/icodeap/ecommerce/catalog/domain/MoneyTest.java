@@ -19,14 +19,14 @@ class MoneyTest {
     @Test
     void rejectsNullAmount() {
         assertThatThrownBy(() -> new Money(null))
-                .isInstanceOf(IllegalArgumentException.class)
+                .isInstanceOf(BusinessRuleViolationException.class)
                 .hasMessage("amount must not be null");
     }
 
     @Test
     void rejectsNegativeAmount() {
         assertThatThrownBy(() -> new Money(BigDecimal.valueOf(-1)))
-                .isInstanceOf(IllegalArgumentException.class)
+                .isInstanceOf(BusinessRuleViolationException.class)
                 .hasMessage("amount must not be negative");
     }
 }
