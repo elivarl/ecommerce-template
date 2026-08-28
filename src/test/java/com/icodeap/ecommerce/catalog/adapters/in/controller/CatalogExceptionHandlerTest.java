@@ -1,5 +1,6 @@
 package com.icodeap.ecommerce.catalog.adapters.in.controller;
 
+import com.icodeap.ecommerce.catalog.application.port.in.CreateProductUseCase;
 import com.icodeap.ecommerce.catalog.application.port.in.GetProductByIdUseCase;
 import com.icodeap.ecommerce.catalog.application.port.in.ListProductsUseCase;
 import com.icodeap.ecommerce.catalog.application.service.ProductNotFoundException;
@@ -27,6 +28,9 @@ class CatalogExceptionHandlerTest {
 
     @MockitoBean
     private GetProductByIdUseCase getProductByIdUseCase;
+
+    @MockitoBean
+    private CreateProductUseCase createProductUseCase;
 
     @Test
     void returnsNotFoundBodyWhenProductDoesNotExist() throws Exception {
